@@ -2,9 +2,9 @@ public class participant
 {
     static int Counter=1000;
     String RegistrationID,Name,Branch;
-    long int ContactNumber;
+    int ContactNumber;
 
-    participant(String name,long int contact,String branch)
+    participant(String name,int contact,String branch)
     {
         Name=name;
         ContactNumber=contact;
@@ -14,7 +14,7 @@ public class participant
     {
         Counter+=1;
         RegistrationID="D"+String.valueOf(Counter);
-        System.out.println("Hi "+Name+"+"+RegistrationID);
+        System.out.println("Hi "+Name+"! Your registration id is "+RegistrationID);
     }
     public static void main(String args[])
     {
